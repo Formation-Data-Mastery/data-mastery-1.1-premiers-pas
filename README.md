@@ -8,26 +8,17 @@
 - Aucune expérience en programmation requise
 - Avoir suivi les leçons 1 et 2 sur [datamastery.dev](https://datamastery.dev) (introduction + installation)
 
-## Contenu
+## Leçons
 
-### Leçons sur le site
+Chaque leçon a une page sur le site (concepts, explications) et, quand le contenu est pratique, un notebook dans ce dépôt (code exécutable). Ouvrir les notebooks dans VS Code (extension Jupyter).
 
-Les deux premières leçons sont des guides texte disponibles sur le site de la formation :
-
-| # | Leçon | Durée | Description |
-|---|-------|-------|-------------|
-| 01 | [Introduction à Claude Code](https://datamastery.dev/module-1/lecon-1-1-quest-ce-que-claude-code) | 30 min | Comprendre l'agent, ses outils, et en quoi il diffère d'un chatbot |
-| 02 | [Installation et configuration](https://datamastery.dev/module-1/lecon-1-2-installation) | 45 min | Terminal, VS Code, Node.js, Claude Code, Python, uv, Git |
-
-### Leçons avec notebooks
-
-Chaque leçon a une page sur le site (concepts, explications) et un notebook dans ce dépôt (code exécutable, exemples). Ouvrir les notebooks dans VS Code (extension Jupyter).
-
-| # | Leçon (site) | Notebook (code) | Durée | Description |
-|---|-------------|-----------------|-------|-------------|
+| # | Leçon (site) | Notebook | Durée | Description |
+|---|-------------|----------|-------|-------------|
+| 01 | [Introduction à Claude Code](https://datamastery.dev/module-1/lecon-1-1-quest-ce-que-claude-code) | — | 30 min | Comprendre l'agent, ses outils, et en quoi il diffère d'un chatbot |
+| 02 | [Installation et configuration](https://datamastery.dev/module-1/lecon-1-2-installation) | — | 45 min | Terminal, VS Code, Node.js, Claude Code, Python, uv, Git |
 | 03 | [Premier graphique](https://datamastery.dev/module-1/lecon-1-3-premier-graphique) | [notebook](notebooks/03_premier_graphique.ipynb) | 60 min | Du CSV au graphique Plotly interactif — 5 exemples concrets |
 | 04 | [Comprendre le dialogue](https://datamastery.dev/module-1/lecon-1-4-comprendre-le-dialogue) | [notebook](notebooks/04_comprendre_dialogue.ipynb) | 45 min | Architecture agent, outils, permissions, optimisation des instructions |
-| 05 | [Cas d'étude : énergie industrielle](https://datamastery.dev/module-1/cas-etude-premier-graphique-energie) | [notebook](notebooks/05_cas_etude_energie.ipynb) | 60 min | 2 600 lignes de données GTC → 4 graphiques, 3 insights métier |
+| 05 | [Cas d'étude : énergie](https://datamastery.dev/module-1/cas-etude-premier-graphique-energie) | [notebook](notebooks/05_cas_etude_energie.ipynb) | 60 min | 2 600 lignes GTC → 4 graphiques, 3 insights métier |
 
 ### Exercices
 
