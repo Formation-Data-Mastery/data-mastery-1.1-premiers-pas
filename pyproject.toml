@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "data-mastery-1-1-premiers-pas"
+version = "1.0.0"
+description = "Module 1.1 — Premiers pas : de la donnée au graphique avec Claude Code"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "plotly>=5.20",
+    "matplotlib>=3.9",
+    "numpy>=1.26",
+    "jupyterlab>=4.2",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "black>=24.0",
+    "ruff>=0.5",
+]
