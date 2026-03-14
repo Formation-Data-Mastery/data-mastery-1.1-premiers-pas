@@ -6,26 +6,38 @@
 
 - Un ordinateur (Mac, Windows ou Linux)
 - Aucune expérience en programmation requise
+- Avoir suivi les leçons 1 et 2 sur [datamastery.dev](https://datamastery.dev) (introduction + installation)
 
 ## Contenu
 
+### Leçons sur le site
+
+Les deux premières leçons sont des guides texte disponibles sur le site de la formation :
+
+| # | Leçon | Durée | Description |
+|---|-------|-------|-------------|
+| 01 | [Introduction à Claude Code](https://datamastery.dev/module-1/lecon-1-1-quest-ce-que-claude-code) | 30 min | Comprendre l'agent, ses outils, et en quoi il diffère d'un chatbot |
+| 02 | [Installation et configuration](https://datamastery.dev/module-1/lecon-1-2-installation) | 45 min | Terminal, VS Code, Node.js, Claude Code, Python, uv, Git |
+
 ### Notebooks
 
-| # | Contenu | Durée | Description |
-|---|---------|-------|-------------|
-| 01 | [Introduction à Claude Code](https://datamastery.dev/module-1/lecon-1-1-quest-ce-que-claude-code) | 30 min | Comprendre l'agent, ses outils, et en quoi il diffère d'un chatbot |
-| 02 | [Installation et configuration](https://datamastery.dev/module-1/lecon-1-2-installation) | 45 min | Guide pas à pas — Terminal, VS Code, Node.js, Claude Code, Python, uv, Git |
+Les notebooks sont le support pratique — code exécutable, exemples concrets, visualisations. Les ouvrir dans VS Code (extension Jupyter).
+
+| # | Notebook | Durée | Description |
+|---|----------|-------|-------------|
 | 03 | [Premier graphique](notebooks/03_premier_graphique.ipynb) | 60 min | Du CSV au graphique Plotly interactif — 5 exemples concrets |
 | 04 | [Comprendre le dialogue](notebooks/04_comprendre_dialogue.ipynb) | 45 min | Architecture agent, outils, permissions, optimisation des instructions |
 | 05 | [Cas d'étude : énergie industrielle](notebooks/05_cas_etude_energie.ipynb) | 60 min | 2 600 lignes de données GTC → 4 graphiques, 3 insights métier |
 
 ### Exercices
 
-| # | Exercice | Niveau | Description |
-|---|----------|--------|-------------|
-| 1 | [Explorer un CSV](exercices/exercice_1_ENONCE.ipynb) | Débutant | Charger, explorer et décrire un jeu de données |
-| 2 | [Créer 3 graphiques](exercices/exercice_2_ENONCE.ipynb) | Intermédiaire | Choisir et produire 3 visualisations pertinentes |
-| 3 | [Analyse complète](exercices/exercice_3_ENONCE.ipynb) | Avancé | De la donnée brute au rapport avec graphiques et insights |
+Chaque exercice existe en deux versions : l'énoncé (à compléter) et la correction.
+
+| # | Exercice | Niveau | Durée |
+|---|----------|--------|-------|
+| 1 | Explorer un CSV ([énoncé](exercices/exercice_1_ENONCE.ipynb) / [correction](exercices/exercice_1_CORRECTION.ipynb)) | Débutant | 20 min |
+| 2 | Créer 3 graphiques ([énoncé](exercices/exercice_2_ENONCE.ipynb) / [correction](exercices/exercice_2_CORRECTION.ipynb)) | Intermédiaire | 40 min |
+| 3 | Analyse complète ([énoncé](exercices/exercice_3_ENONCE.ipynb) / [correction](exercices/exercice_3_CORRECTION.ipynb)) | Avancé | 60 min |
 
 ### Données
 
@@ -35,75 +47,51 @@
 | `data/production_industrielle.csv` | ~1 500 | Production manufacturière : quantités, défauts, temps d'arrêt |
 | `data/capteurs_temperature.csv` | ~500 | Capteurs IoT : température et humidité toutes les 15 minutes |
 
-## Installation
-
-### 1. Cloner le projet
+## Démarrage rapide
 
 ```bash
-git clone <repository-url>
-cd Formation-Data-Mastery/1.1-Premiers-pas
-```
+# Cloner le dépôt
+git clone https://github.com/Formation-Data-Mastery/data-mastery-1.1-premiers-pas.git
+cd data-mastery-1.1-premiers-pas
 
-### 2. Initialiser l'environnement avec uv
-
-Si `uv` n'est pas installé, installer depuis [uv.astral.sh](https://github.com/astral-sh/uv).
-
-```bash
+# Installer les dépendances
 uv sync
+
+# Ouvrir dans VS Code
+code .
 ```
 
-Cela crée un `.venv/` local et installe toutes les dépendances.
-
-### 3. Activer l'environnement
-
-```bash
-source .venv/bin/activate
-```
-
-Ou sur Windows :
-
-```bash
-.venv\Scripts\activate
-```
-
-### 4. Lancer Jupyter Lab
-
-```bash
-jupyter lab
-```
-
-Accéder ensuite à `http://localhost:8888` dans le navigateur.
+Puis ouvrir un notebook (`.ipynb`) depuis l'explorateur de fichiers de VS Code. Sélectionner le kernel Python du projet (`.venv`) quand VS Code le demande.
 
 ## Structure
 
 ```
 1.1-Premiers-pas/
-├── README.md                          # Ce fichier
-├── pyproject.toml                     # Configuration Python uv
-├── .python-version                    # Python 3.12
-├── .gitignore                         # Fichiers ignorés par Git
+├── README.md
+├── pyproject.toml
+├── .python-version
+├── .gitignore
 │
-├── notebooks/                         # Notebooks pédagogiques (screencasts)
-│   ├── 01_introduction_claude_code.ipynb
-│   ├── 02_installation_configuration.ipynb
+├── notebooks/
 │   ├── 03_premier_graphique.ipynb
 │   ├── 04_comprendre_dialogue.ipynb
 │   └── 05_cas_etude_energie.ipynb
 │
-├── exercices/                         # Énoncés et solutions
+├── exercices/
 │   ├── exercice_1_ENONCE.ipynb
-│   ├── exercice_1_SOLUTION.ipynb
+│   ├── exercice_1_CORRECTION.ipynb
 │   ├── exercice_2_ENONCE.ipynb
-│   ├── exercice_2_SOLUTION.ipynb
+│   ├── exercice_2_CORRECTION.ipynb
 │   ├── exercice_3_ENONCE.ipynb
-│   └── exercice_3_SOLUTION.ipynb
+│   └── exercice_3_CORRECTION.ipynb
 │
-└── data/                              # CSV d'exemple
+└── data/
     ├── consommation_energie.csv
     ├── production_industrielle.csv
-    └── capteurs_temperature.csv
+    ├── capteurs_temperature.csv
+    └── generate_data.py
 ```
 
 ## Licence
 
-Ce contenu est la propriété de Data Mastery. Utilisation personnelle et éducative autorisée.
+Ce contenu est la propriété de Data Mastery (datamastery.dev). Usage personnel et éducatif autorisé.
