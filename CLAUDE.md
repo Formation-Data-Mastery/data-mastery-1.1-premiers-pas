@@ -5,7 +5,7 @@
 - Python géré avec uv (pas pip)
 - Pour installer un package : `uv add nom-du-package`
 - Pour exécuter du code : `uv run python script.py`
-- Ne jamais utiliser pip ou .venv/bin/pip
+- IMPORTANT : ne JAMAIS utiliser pip, python -m pip, ou .venv/bin/pip — toujours uv add
 
 ## Contexte
 
