@@ -34,7 +34,6 @@ A partir de la, suivre les lecons sur le site.
 |---------|---------|
 | `data/` | Les fichiers CSV utilises dans les lecons |
 | `exercices/` | Des exercices avec enonce et correction |
-| `corrections/` | Le code complet de chaque lecon (a consulter en cas de blocage) |
 
 ### Donnees disponibles
 
@@ -56,6 +55,6 @@ A partir de la, suivre les lecons sur le site.
 
 ## Besoin d'aide ?
 
-- En cas de blocage, consulter les fichiers dans `corrections/`
+- En cas de blocage, demander a Claude Code : "Reprends depuis le debut" ou "Qu'est-ce qui n'a pas marche ?"
 - Pour les exercices, commencer par l'enonce puis comparer avec la correction
 - La lecon 1.2 sur le site contient un guide de resolution des problemes courants
