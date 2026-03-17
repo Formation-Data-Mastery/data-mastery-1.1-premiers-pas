@@ -7,8 +7,8 @@ Ce dossier contient les données, notebooks et exercices du premier module de la
 Ouvrir un terminal et taper ces 3 commandes :
 
 ```bash
-git clone https://github.com/Formation-Data-Mastery/data-mastery-1.1-premiers-pas.git
-cd data-mastery-1.1-premiers-pas
+git clone https://github.com/Formation-Data-Mastery/data-mastery-1.1-fondations.git
+cd data-mastery-1.1-fondations
 uv sync
 ```
 
