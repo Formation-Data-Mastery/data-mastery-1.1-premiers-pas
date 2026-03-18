@@ -415,7 +415,7 @@ wheels = [
 ]
 
 [[package]]
-name = "data-mastery-1-1-premiers-pas"
+name = "data-mastery-1-1-fondations"
 version = "1.0.0"
 source = { virtual = "." }
 dependencies = [

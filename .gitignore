@@ -63,3 +63,9 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Fichiers générés pendant les exercices (pas de référence)
+output/*.html
+output/*.pdf
+output/*.png
+notebooks/cas_etude_energie.ipynb
