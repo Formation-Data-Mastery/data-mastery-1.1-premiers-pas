@@ -9,7 +9,22 @@
 
 ## Contexte
 
-Ce projet est un module de formation pour débutants. Les données sont dans `data/`. Les résultats (graphiques, notebooks) vont dans `output/` ou `notebooks/`.
+Ce projet est un module de formation pour débutants.
+
+## Structure des dossiers et chemins
+
+```
+data-mastery-1.1-fondations/
+├── data/          ← fichiers CSV (source de données)
+├── notebooks/     ← notebooks Jupyter créés pendant les leçons
+├── output/        ← graphiques HTML, PNG, PDF générés
+└── scripts/       ← scripts Python
+```
+
+**Chemins relatifs dans les notebooks** (situés dans `notebooks/`) :
+- Lire un fichier CSV : `pd.read_csv("../data/nom_fichier.csv")`
+- Sauvegarder un graphique : `fig.write_html("../output/nom.html")`
+- Ne jamais utiliser `data/` seul depuis un notebook — toujours `../data/`
 
 ## Conventions
 
