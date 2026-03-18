@@ -4,7 +4,7 @@
     "dockerfile": "Dockerfile"
   },
   "remoteUser": "apprenant",
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.cargo/bin/uv sync && ~/.cargo/bin/uv run python -m ipykernel install --user --name=data-mastery --display-name='Data Mastery (Python 3.12)'",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.cargo/bin/uv sync && ~/.cargo/bin/uv run python -m ipykernel install --user --name=data-mastery --display-name='Data Mastery (Python 3.12)' && npm install -g @anthropic-ai/claude-code",
   "customizations": {
     "vscode": {
       "extensions": [
